@@ -1,0 +1,10 @@
+---
+- name: Copy files to ansible nodes for web hosting
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Copy files
+      copy:
+        src: /home/ubuntu/exercise-3/fitness-page-sign-up/
+        dest: /var/www/html

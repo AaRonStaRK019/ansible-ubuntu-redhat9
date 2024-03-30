@@ -1,0 +1,28 @@
+---
+- name: install and start apache2 on UBuntu and httpd on CentOS/RedHat
+  hosts: all
+  become: yes
+  tasks:
+    - name: install apache2 on UBuntu
+      apt:
+        name: apache2
+        state: present
+      when: ansible_distribution == 'Ubuntu'
+
+    - name: start apache2 on UBuntu
+      service:
+        name: apache2
+        state: started
+      when: ansible_distribution == 'Ubuntu'
+
+    - name: install httpd on RedHat
+      yum:
+        name: httpd
+        state: present
+      when: ansible_distribution == 'RedHat'
+
+    - name: start apache2 on UBuntu
+      service:
+        name: httpd
+        state: started
+      when: ansible_distribution == 'RedHat'
