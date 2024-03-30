@@ -19,12 +19,12 @@
 
 ![](./img/clone-website-fles-to-master.png)
 
-`add ip addresses of slave nodes to inventory file`
+`add IP addresses of slave nodes to inventory file`
 
 ![inventory file](./img/inventory-file.png)
 
 
-`run ping test to confirm connection to ansible nodes`
+`run a ping test to confirm connection to ansible nodes`
 
 ![ping test](./img/ping-test-success.png)
 
@@ -34,7 +34,7 @@
 ![no apache2](./img/confirm-no-apache2-ubuntu.png)
 
 
-`confirm that apache httpd isn't yet installed on redhat-server node`
+`confirm that Apache httpd isn't yet installed on redhat-server node`
 
 ![no httpd](./img/confirm-no-httpd-redhat.png)
 
@@ -67,13 +67,21 @@
 
 `confirm web files are in /var/www/html directory on both nodes`
 
+`ubuntu server - files`
+
 ![ubuntu-seerver web files](./img/confirm-copy-ubuntu.png)
+
+`redhat server - files`
 
 ![redhat-server web files](./img/confirm-copy-redhat.png)
 
 
-`reload servers ipaddresses and check for newly-hosted page`
+`reload servers IP addresses and check for newly-hosted page`
+
+`ubuntu-hosted page`
 
 ![ubuntu hosted page](./img/ubuntu-server-working.png)
+
+`redhat-hosted page`
 
 ![redhat hosted page](./img/redhat-server-working.png)
