@@ -12,4 +12,4 @@ This exercise will aim to host a mockup fitness sign-up page on two ansible node
 
 [Copy webpage files PLaybook](./playbooks/ansible_copy_files.yml)
 
-A step by step process of the entire task is documented in ![hosting process](./hosting-process.md)
+A step by step process of the entire task is documented in [hosting process](./hosting-process.md)
